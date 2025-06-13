@@ -1,6 +1,7 @@
  
 .DS_Store
-cypress.env.json
+cypress.env.json # .gitignore
+# config.json  ← comente ou apague essa linha
 cypress\screenshots\
 cypress\videos\
 node_modules\
