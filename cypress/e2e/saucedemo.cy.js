@@ -13,8 +13,7 @@ describe('Sauce demo', () => {
     // Clica no botão de login
     cy.get('[data-test="login-button"]').click();
     
-    // Verifica se redirecionou para a página de inventário
-    cy.url().should('include', '/inventory.html');
+    cy.contains('.title', 'Products').should('be.visible');
   });
 
     it('tries to login with a locked out user', () => {
@@ -27,8 +26,7 @@ describe('Sauce demo', () => {
     // Clica no botão de login
     cy.get('[data-test="login-button"]').click();
     
-     // Verifica se redirecionou para a página de inventário
-    cy.url().should('include', '/inventory.html');
+    cy.get('.error-message-container').should('be.visible');
     })
 
 });
