@@ -16,4 +16,19 @@ describe('Sauce demo', () => {
     // Verifica se redirecionou para a página de inventário
     cy.url().should('include', '/inventory.html');
   });
+
+    it('tries to login with a locked out user', () => {
+      // Preenche o campo usuário
+    cy.get('[data-test="username"]').type('locked_out_user');
+    
+    // Preenche o campo senha
+    cy.get('[data-test="password"]').type('secret_sauce');
+    
+    // Clica no botão de login
+    cy.get('[data-test="login-button"]').click();
+    
+     // Verifica se redirecionou para a página de inventário
+    cy.url().should('include', '/inventory.html');
+    })
+
 });
