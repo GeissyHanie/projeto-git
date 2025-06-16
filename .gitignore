@@ -19,3 +19,5 @@ cypress.env.json
 
 # Ignora resultados de testes temporários (caso você use alguma lib de cobertura de testes)
 coverage/
+
+arquivos.txt
