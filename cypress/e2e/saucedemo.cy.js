@@ -13,7 +13,9 @@ describe('Sauce demo', () => {
     // Clica no botão de login
     cy.get('[data-test="login-button"]').click();
     
-    cy.contains('.title', 'Products').should('be.visible');
+    cy.get('.title')
+    .should('be.visible')
+    .and('have.text','Products')
   });
 
     it('tries to login with a locked out user', () => {
