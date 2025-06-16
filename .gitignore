@@ -1,7 +1,20 @@
- 
-.DS_Store
-cypress.env.json # .gitignore
-# config.json  ← comente ou apague essa linha
-cypress\screenshots\
-cypress\videos\
-node_modules\
+D:\Testes\projeto-git># Ignora configurações do sistema/macOS/VSCode
+'#' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+D:\Testes\projeto-git>.DS_Store
+'.DS_Store' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+D:\Testes\projeto-git>.vscode/
+'.vscode' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+D:\Testes\projeto-git>
+D:\Testes\projeto-git># Ignora resultados de testes temporários (caso você use alguma lib de cobertura de testes)
+'#' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+D:\Testes\projeto-git>coverage/
+'coverage' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
