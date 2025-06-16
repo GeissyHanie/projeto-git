@@ -1,20 +1,21 @@
-D:\Testes\projeto-git># Ignora configurações do sistema/macOS/VSCode
-'#' não é reconhecido como um comando interno
-ou externo, um programa operável ou um arquivo em lotes.
+# Ignora dependências do projeto
+node_modules/
 
-D:\Testes\projeto-git>.DS_Store
-'.DS_Store' não é reconhecido como um comando interno
-ou externo, um programa operável ou um arquivo em lotes.
+# Ignora arquivos de log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-D:\Testes\projeto-git>.vscode/
-'.vscode' não é reconhecido como um comando interno
-ou externo, um programa operável ou um arquivo em lotes.
+# Ignora pastas e arquivos criados automaticamente pelo Cypress
+cypress/screenshots/
+cypress/videos/
 
-D:\Testes\projeto-git>
-D:\Testes\projeto-git># Ignora resultados de testes temporários (caso você use alguma lib de cobertura de testes)
-'#' não é reconhecido como um comando interno
-ou externo, um programa operável ou um arquivo em lotes.
+# Ignora variáveis de ambiente (remova esta linha se quiser versionar o arquivo)
+cypress.env.json
 
-D:\Testes\projeto-git>coverage/
-'coverage' não é reconhecido como um comando interno
-ou externo, um programa operável ou um arquivo em lotes.
+# Ignora configurações do sistema/macOS/VSCode
+.DS_Store
+.vscode/
+
+# Ignora resultados de testes temporários (caso você use alguma lib de cobertura de testes)
+coverage/
