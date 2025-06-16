@@ -29,4 +29,16 @@ describe('Sauce demo', () => {
     cy.get('.error-message-container').should('be.visible');
     })
 
-});
+    it('logs in Successfully with a problematic user', () => {
+    // Preenche o campo usuário
+    cy.get('[data-test="username"]').type('problem_user');
+    
+    // Preenche o campo senha
+    cy.get('[data-test="password"]').type('secret_sauce');
+    
+    // Clica no botão de login
+    cy.get('[data-test="login-button"]').click();
+    
+    cy.contains('.title', 'Products').should('be.visible');
+    })
+})
